@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .grand_parent{
+            width: 100vw;
+            height: 100vw;
+            background:red ;
+            color: black;
+        }
+        h1{
+            font-size: 4rem;
+            padding: 50px 0;
+            text-align: center;
+            
+
+        }
+        p{
+            text-align: center;
+            font-size: 1.5rem;
+          
+        }
+        .parents{
+            width: 80vw;
+            height: auto;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .child{
+            height: 200px;
+            background: chartreuse;
+            box-shadow: 10px 10px 20px white;
+            flex: 1 1 200px;
+            margin: 20px;
+            border-radius: 10px;
+            
+        }
+        .child:first-child{
+            background-color: orange;
+        }
+        .child:last-child{
+                background-color: aqua;
+           
+        }
+        .second{
+            background-color: yellow;
+        }
+        @media (max-width:768px) {
+            .grand_parent{height: auto;}
+            h1{background-color: green;
+            color: red;
+    
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="grand_parent">
+        <h1> <u >Service</u></h1>
+        <div class="parents">
+            <div class="child">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, tempora?</p>
+            </div>
+            <div class="child">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, tempora?</p>
+            </div>  <div class="child">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, tempora?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
